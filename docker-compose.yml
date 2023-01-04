@@ -206,7 +206,6 @@ services:
         - backend
       links:
         - docker-in-docker
-      restart: always
 
 ### PHP-FPM ##############################################
     php-fpm:
