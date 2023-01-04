@@ -434,12 +434,9 @@ services:
         - ${NGINX_SITES_PATH}:/etc/nginx/sites-available
         - ${NGINX_SSL_PATH}:/etc/nginx/ssl
       ports:
-###     - "${NGINX_HOST_HTTP_PORT}:80"
-        - "8888:80"
-        - "444:443"
-###     - "${NGINX_HOST_HTTPS_PORT}:443"
-###     - "${VARNISH_BACKEND_PORT}:81"
-        - "8889:81"
+        - "${NGINX_HOST_HTTP_PORT}:80"
+        - "${NGINX_HOST_HTTPS_PORT}:443"
+        - "${VARNISH_BACKEND_PORT}:81"
       depends_on:
         - php-fpm
       networks:
