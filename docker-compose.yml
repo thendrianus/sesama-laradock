@@ -442,7 +442,6 @@ services:
       networks:
         - frontend
         - backend
-      restart: always
 
 ### OpenResty Server #########################################
     openresty:
@@ -554,7 +553,6 @@ services:
         - "${MYSQL_PORT}:3306"
       networks:
         - backend
-      restart: always
 
 ### Percona ################################################
     percona:
@@ -983,7 +981,6 @@ services:
       networks:
         - frontend
         - backend
-      restart: always
 
 ### Adminer ###########################################
     adminer:
